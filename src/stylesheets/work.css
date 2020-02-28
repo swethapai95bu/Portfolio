@@ -1,0 +1,48 @@
+.main_container {
+    padding: 30px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.title {
+    text-align: left;
+    padding: 30px;
+}
+
+#shell_logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.work_desc {
+    text-align: left;
+    width: 50%;
+    font-size: large;
+    padding: 30px;
+}
+
+.work_ex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#project_flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.role {
+    /*float: right;*/
+    font-size: x-large;
+}
+
+.company {
+    display: flex;
+    justify-content: left;
+}

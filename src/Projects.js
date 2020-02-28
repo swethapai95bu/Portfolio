@@ -1,0 +1,72 @@
+import React from 'react';
+import './stylesheets/project.css';
+
+
+export default class Resume extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+
+        function showDesc(event, props) {
+            let img = document.getElementById(event.target.id);
+
+            let modal = document.getElementById('myModal');
+
+
+            let modalImg = document.getElementById("img01");
+            let date = document.getElementById("date");
+            let desc = document.getElementById("desc");
+            let tech = document.getElementById("tech");
+            let title = document.getElementById("title_modal");
+            let repo = document.getElementById("repo");
+            debugger;
+
+
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            date.innerHTML= "Date: "+props.date;
+            desc.innerHTML= "Description: "+props.description;
+            tech.innerHTML= "Technologies: "+props.tech;
+            title.innerHTML = props.title;
+            repo.innerHTML= "Repository: "+props.repo;
+
+            modal.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+
+        return (
+
+            <div className={"project_container"}>
+
+
+                <div className="proj_desc">
+                    <div className="card">
+                    <img src={this.props.image} className={"screenshot"} onClick={(e)=> showDesc(e, this.props)} id={this.props.id}></img>
+                        <div className="container">
+                            <h4><b>{this.props.title}</b></h4>
+                        </div>
+                    </div>
+
+                    <div id="myModal" className="modal">
+                        <span className="close">&times;</span>
+                        <div className={"desc"} id={"title_modal"}></div>
+                        <img className="modal-content" id="img01"></img>
+
+                        <div className={"desc"}>
+                            <p id={"desc"}><b>Description: </b></p>
+                            <p id={"tech"}><b>Technologies used: </b></p>
+                            <p id={"date"}><b>Date: </b></p>
+                            <p id={"repo"}><b>Repository: </b></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        )
+}
+}
