@@ -1,12 +1,40 @@
+#skills {
+    color: #b30000;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
 .skills {
+    padding-top: 50px;
+    text-align: left;
+}
+
+#click {
+    color: #b30000;
+}
+
+#click:hover {
+    cursor: pointer;
+}
+
+.skillset {
     color: black;
     text-align: left;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
     /*background-color: #ff9999;*/
 
+
+}
+
+#star {
+    color: #b30000;
+}
+
+ul {
+    list-style-type: square;
 }
 
 .skillLogo {
@@ -24,5 +52,20 @@
     text-align: center;
     float:right;
     /*background-color: #b30000;*/
+}
+
+.botui-container {
+    border: 1px solid black;
+    margin-top: 30px;
+    border-radius: 5%;
+    padding: 0px;
+}
+
+button.botui-actions-buttons-button {
+    color: black;
+}
+
+#chatbot_img {
+
 }
 

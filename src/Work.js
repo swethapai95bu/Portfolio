@@ -84,8 +84,9 @@ export default class Resume extends React.Component {
                                 description={"This is a web based application that enables users to search for restaurants around them. " +
                                 "The user can also rate, review, add to wish list and categorize the restaurants of their choice. The application was built using MEAN stack with the help of the Zomato API to retrieve the details of restaurants."}
                                 tech={"Angular, NodeJS, MongoDB, Express"} date={"Spring 2019"}/>
-                       <Project title={"Android Application for Roommates"} image={roomit}  id={"roomit"}/>
-                       <Project title={"Chatbot for Smartwatch data"} image={chatbot} id="chatbot" />
+                       <Project title={"Android Application for Roommates"} image={roomit}
+                       description="This is an android application which can be be used for roommate co-ordination. Roommates can make a list of chores with one roommate assigned to each of them. The app also allows users to make common grocery lists and manage their expenses. Implementation of this application was done using Java with Firebase as the database to save the details entered by the users as well their login information." id={"roomit"}/>
+                       <Project title={"Chatbot for Smartwatch data"} description="This is a web based chatbot which is capable of having textual conversations with users by using pattern matching. The chatbot answers the users' queries regarding data collected from their smartwatch sensors such as HeartBeat sensor, LightSensor etc. " image={chatbot} id="chatbot" />
                        <Project title={"Course Planner for graduate school"} image={planner}  id={"journal"}/>
                        <Project title={"Online Diary for daily journaling"} image={diary}  id={"diary"}/>
 
@@ -93,6 +94,7 @@ export default class Resume extends React.Component {
                </div>
 
            </div>
+
 
                <Footer />
 
