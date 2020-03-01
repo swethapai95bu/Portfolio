@@ -13,7 +13,7 @@
 }
 
 .title {
-    text-align: center;
+    text-align: left;
     padding: 30px;
     /*color: #b30000;*/
     font-weight: bold;
@@ -29,7 +29,7 @@
     text-align: left;
     width: 50%;
     font-size: medium;
-    padding: 30px;
+    padding-left: 30px;
 }
 
 .work_ex {
@@ -56,6 +56,10 @@
 
 #shell_bang {
     margin-bottom: 10px;
+}
+
+.workplace {
+    font-size: x-large;
 }
 
 

@@ -25,7 +25,7 @@ export default class Resume extends React.Component {
             debugger;
 
 
-            if(props.id=="roomit" || props.id=="planner") {
+            if(props.id=="roomit") {
                 modalImg.style.height = "500px";
                 modalImg.style.width = "300px";
             }
@@ -34,12 +34,12 @@ export default class Resume extends React.Component {
 
             modal.style.display = "block";
             modalImg.src = img.src;
-            date.innerHTML= "Date: "+props.date;
-            desc.innerHTML= "Description: "+props.description;
-            tech.innerHTML= "Technologies: "+props.tech;
+            date.innerHTML= "<b>Date:</b> "+props.date;
+            desc.innerHTML= "<b>Description:</b> "+props.description;
+            tech.innerHTML= "<b>Technologies:</b> "+props.tech;
             title.innerHTML = props.title;
             if(props.repo!=undefined)
-            repo.innerHTML= "Repository: "+props.repo;
+            repo.innerHTML= "<b>Repository:</b> "+props.repo;
             else
                 repo.innerHTML = "";
 

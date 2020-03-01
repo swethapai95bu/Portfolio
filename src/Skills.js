@@ -27,7 +27,7 @@ export default class Skills extends React.Component {
             delay: 1000
         }).then(function() {
             self.botui.action.button({
-                delay: 1000,
+                delay: 1500,
 
                 action: [
                     {
@@ -49,6 +49,8 @@ export default class Skills extends React.Component {
                     self.skills();
                 else if(res.value=='courses')
                     self.courses();
+                else
+                    self.hobbies();
             });
         });
     }
@@ -56,9 +58,14 @@ export default class Skills extends React.Component {
     skills() {
         const self = this;
         this.botui.message.bot({
-            content: "I'm proficient with Web Technologies such as React, Angular, JavaScript, TypeScript, HTML, CSS, NodeJS, JQuery and PHP",
-            delay: 1000,
+            content: "I've got some MEAN skills! (Geddit? :P)",
+            delay: 500,
             loading: true,
+        }).then(function () {
+            self.botui.message.bot({
+                delay: 2000,
+                content: "I'm proficient with Web Technologies such as React, Angular, JavaScript, TypeScript, HTML, CSS, NodeJS, JQuery and PHP"
+            })
         }).then(function () {
             self.botui.message.bot({
                 delay: 2000,
@@ -72,12 +79,12 @@ export default class Skills extends React.Component {
     }).then(function () {
             self.botui.message.bot({
                 delay: 4000,
-                content: "Databases I've worked with: Oracle, MySQL, MongoDB"
+                content: "Databases I've worked with are Oracle, MySQL and MongoDB"
             })
         }).then(function () {
             return self.botui.message.bot({
                 delay: 5000,
-                content: "Tools I've used: AndroidStudio, Oracle 12C, Heroku, GitHub, RStudio, Endur"
+                content: "Tools I've used are AndroidStudio, Oracle 12C, Heroku, GitHub, RStudio and Endur"
             })
         }).then(function () {
             self.showMenu();
@@ -87,7 +94,7 @@ export default class Skills extends React.Component {
     courses() {
         const self = this;
         this.botui.message.bot({
-            content: "I've taken up courses such as Web Application Development, Server Side Development and Rich Internet Application Development and mastered several web technologies",
+            content: "I've taken up courses such as Web Application Development, Server Side Development, Rich Internet Application Development and mastered several web technologies",
             delay: 1000,
             loading: true,
         }).then(function () {
@@ -96,9 +103,30 @@ export default class Skills extends React.Component {
                 content: "I also learnt how to build Android apps in my 'Mobile Application Development' class"
             })
         }).then(function () {
-            self.botui.message.bot({
+            return self.botui.message.bot({
                 delay: 3000,
-                content: "Courses like Advanced Algorithms, Advanced Database Management and Advanced Programming Techniques and Software Design Patterns have helped me build a strong foundation in Programming"
+                content: "Courses like Advanced Algorithms, Advanced Database Management, Advanced Programming Techniques and Software Design Patterns have helped me build a strong foundation in Programming"
+            })
+        }).then(function () {
+            self.showMenu();
+        })
+    }
+
+    hobbies() {
+        const self=this;
+        this.botui.message.bot({
+            content: "Did you really expect a grad student to have hobbies?",
+            delay: 1000,
+            loading: true,
+        }).then(function () {
+            self.botui.message.bot({
+                delay: 2000,
+                content: "Just Kidding!"
+            })
+        }).then(function () {
+            return self.botui.message.bot({
+                delay: 3000,
+                content: "I love watching movies, reading books and listening to rock music. Of late I've also been trying my hand at photography."
             })
         }).then(function () {
             self.showMenu();
@@ -126,12 +154,12 @@ export default class Skills extends React.Component {
         }).then(function (res) { // get the result
             self.botui.message.add({
                 loading: true,
-                delay: 800,
+                delay: 400,
                 content: 'Nice to meet you, ' + res.value
             })
         }).then(function (res) { // get the result
             self.botui.message.add({
-                delay: 1000,
+                delay: 1200,
                 content: 'What would you like to know?',
                 loading:true
             })
@@ -159,6 +187,8 @@ export default class Skills extends React.Component {
                     self.skills();
                 else if(res.value=='courses')
                     self.courses();
+                else
+                    self.hobbies();
             });
         });
 
@@ -196,7 +226,7 @@ export default class Skills extends React.Component {
                     <p>I'm looking to leverage my technical skills to solve challenging problems.</p>
 
                     <p>Click <span id={"click"} onClick={openChatBot}>here</span> to know more about me from my chatbot.</p>
-                    <p>Of late, I've been trying my hand at photography. Checkout my <span id="pics"><Link to={"/photography"}> pictures. </Link></span></p>
+                    <p>Of late, I've been trying my hand at photography. Checkout my <Link to={"/photography"}> <span id="pics">pictures. </span></Link></p>
 
                     <p>Connect with me on social media <a href="https://www.linkedin.com/in/swethapai1995/"><img className="footerlogo" src={linkedinLogo}/></a>
                         <a href={"https://www.facebook.com/swetha.pai.9"}><img className="footerlogo" src={facebookLogo}/></a>
@@ -222,7 +252,9 @@ export default class Skills extends React.Component {
                 {/*</div>*/}
 
                 <div id="myModal" className="modal">
+
                     <span id="close" className="close">&times;</span>
+                    <div id={"chatbot_title"}>Welcome to my Chatbot!</div>
                     <div className={"desc"} id={"title_modal"}><Botui id="botui" ref={ cmp => this.botui = cmp } /></div>
                     <img className="modal-content" id="img01"></img>
 

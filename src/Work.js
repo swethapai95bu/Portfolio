@@ -25,7 +25,7 @@ export default class Resume extends React.Component {
                        <div className={"company"}>
                        <a href={"https://voda.ai/"}><img className="logo" src={vodalogo}></img></a>
                        <div className={"role"}>
-                           <b>VODA.ai</b>
+                           <div className={"workplace"}> <b>VODA.ai</b></div>
                            <div>Full Stack Development Intern</div>
                            <div>Boston, MA (May '19 - Aug '19)</div>
                        </div><br/>
@@ -44,7 +44,7 @@ export default class Resume extends React.Component {
                        <div className={"company"}>
                        <a href={"https://www.shell.com/"}><img className="logo" id="shell_logo" src={shelllogo}></img></a>
                        <div className={"role"}>
-                           <b>Shell</b>
+                           <div className={"workplace"}> <b>Shell</b></div>
                            <div>Software Engineer</div>
                            <div id={"shell_bang"}>Bangalore, India (Jun '17 - Jul '18)</div>
                        </div>
@@ -62,7 +62,7 @@ export default class Resume extends React.Component {
                    <div id={"hexagon"} className={"work_desc"}>
                        <div className={"company"}>
                        <a href={"https://www.hexagonglobal.in/"}><img className="logo" id="hexagon_logo" src={hexagon}></img></a>
-                       <div className={"role"}><b>Hexagon Global Pvt. Ltd.</b>
+                           <div className={"role"}><div className={"workplace"}> <b>Hexagon Global Pvt. Ltd.</b></div>
                            <div>Software Engineer Intern</div>
                            <div>Bangalore, India (Sept '16 - Nov '16)</div>
                        </div>
@@ -80,7 +80,7 @@ export default class Resume extends React.Component {
                    <div id={"project_flex"}>
                        <Project title={"Banking Application using Builder Pattern"} image={banking} date="Fall 2019"
                                 description={"The banking application aims to create bank accounts for customers and also manage their credit card and debit card transactions.\n" +
-                                "The program determines if a customer is eligible to hold an account based on certain criteria and will assign savings and checking accounts. " +
+                                "The program will determine if a customer is eligible to hold an account based on certain criteria and will assign savings and checking accounts. " +
                                 "A credit card with a certain credit limit and a debit card will also be attributed to the customer. The customer can perform operations such as payment with cards, transferring money, redeeming cashback, paying off credit card etc. " +
                                 "The application has been implemented in Java using several design patterns such as Builder Pattern, Visitor Pattern, Observer Pattern and Strategy Pattern."} tech={"Java"} repo={"https://github.com/swethapai95bu/Banking-Application"} id={"bank"}/>
                        <Project title={"Restaurant Finder - MEAN stack application"} image={resfinder} id="resfind"
@@ -90,7 +90,7 @@ export default class Resume extends React.Component {
                        <Project title={"Android Application for Roommates"} image={roomit}
                        description="This is an android application which can be be used for roommate co-ordination. Roommates can make a list of chores with one roommate assigned to each of them. The app also allows users to make common grocery lists and manage their expenses. Implementation of this application was done using Java with Firebase as the database to save the details entered by the users as well their login information."
                                 tech={"Java, Firebase"} date="Fall 2018" id={"roomit"}/>
-                       <Project title={"Chatbot for Smartwatch data"} description="This is a web based chatbot which is capable of having textual conversations with users by using pattern matching. The chatbot answers the users' queries regarding data collected from their smartwatch sensors such as HeartBeat sensor, LightSensor etc. The smartwatch data is retrieved from three sources - Files, MongoDB and MySQL database. This project also includes comparison of response time of the three sources"
+                       <Project title={"Chatbot for Smartwatch data"} description="This is a web based chatbot which is capable of having textual conversations with users by pattern matching. The chatbot answers the users' queries regarding data collected from their smartwatch sensors such as HeartBeat sensor, LightSensor etc. The smartwatch data is retrieved from three sources - Files, MongoDB and MySQL database. This project also includes comparison of response time of the three sources"
                                 tech={"React, Java, SpringBoot, BotUI, MongoDB, MySQL"} date="Fall 2019" image={chatbot} id="chatbot" />
                        <Project title={"Course Planner for graduate school"}
                                 description={"This is a Python application which automates the process of creating a course schedule for grad students. The program allows the users to enter the core subjects, electives and specialization of their choice and automatically creates a schedule for each of the semesters by taking into consideration pre-requisites for courses, total credits etc. The program checks which courses are offered during particular semesters and creates the most optimal schedule such that there are no time conflicts."}
