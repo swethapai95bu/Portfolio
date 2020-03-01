@@ -19,14 +19,15 @@ export default class Resume extends React.Component {
         return (
             <div>
            <div className={"main_container"}>
-               <h2 className={"title"}>Work experience</h2>
+               <h3 className={"title"}>WORK EXPERIENCE</h3>
                <div className={"work_ex"}>
                    <div id={"voda"} className={"work_desc"}>
                        <div className={"company"}>
                        <a href={"https://voda.ai/"}><img className="logo" src={vodalogo}></img></a>
                        <div className={"role"}>
                            <b>VODA.ai</b>
-                           <p>Full Stack Development Intern</p>
+                           <div>Full Stack Development Intern</div>
+                           <div>Boston, MA (May '19 - Aug '19)</div>
                        </div><br/>
                        </div>
                        <div>
@@ -35,7 +36,7 @@ export default class Resume extends React.Component {
                            <br/><br/>
                            Implementing such a big chunk of the project gave me a chance to hone my skills and also learn new technologies. Involvement in setting up servers, deploying applications, maintaining the code base and monitoring the applications has led me gain a diverse set of skills required to build full-fledged scalable web applications.
                            <br/><br/>
-                           I thoroughly enjoyed my time at the company during which I got to learn a lot not just about my field but about startups and various other things. I had the privilege of working with a renowned set of people coming together to make a difference with technology.
+                       {/*    I thoroughly enjoyed my time at the company during which I got to learn a lot not just about my field but about startups and various other things. I had the privilege of working with a renowned set of people coming together to make a difference with technology.*/}
                        </div>
                    </div>
 
@@ -44,7 +45,8 @@ export default class Resume extends React.Component {
                        <a href={"https://www.shell.com/"}><img className="logo" id="shell_logo" src={shelllogo}></img></a>
                        <div className={"role"}>
                            <b>Shell</b>
-                           <p>Software Engineer</p>
+                           <div>Software Engineer</div>
+                           <div id={"shell_bang"}>Bangalore, India (Jun '17 - Jul '18)</div>
                        </div>
                        </div>
                        <div>
@@ -52,7 +54,7 @@ export default class Resume extends React.Component {
                            <br/><br/>
                            During my time at the company, I got an opportunity to work on several challenging projects which included improving accuracy of the Deal Mature task, automating configurations from one Endur environment to the other, enhancing features of the GUI used to book trades etc. I received recognitions for my contributions to these tasks.
                            <br/><br/>
-                           I was fortunate to have worked at a company such as Shell where I got to interact with highly intellectual and motivated team members. It not only made me a proficient programmer but gave me an insight into the workings of the industry and strengthened my desire to pursue a Master's degree in the field of Computer Science.
+                           {/*I was fortunate to have worked at a company such as Shell where I got to interact with highly intellectual and motivated team members. It not only made me a proficient programmer but gave me an insight into the workings of the industry and strengthened my desire to pursue a Master's degree in the field of Computer Science.*/}
 
                        </div>
                    </div>
@@ -61,7 +63,8 @@ export default class Resume extends React.Component {
                        <div className={"company"}>
                        <a href={"https://www.hexagonglobal.in/"}><img className="logo" id="hexagon_logo" src={hexagon}></img></a>
                        <div className={"role"}><b>Hexagon Global Pvt. Ltd.</b>
-                           <p>Software Engineer Intern</p>
+                           <div>Software Engineer Intern</div>
+                           <div>Bangalore, India (Sept '16 - Nov '16)</div>
                        </div>
                        </div>
                        <div>
@@ -73,7 +76,7 @@ export default class Resume extends React.Component {
                </div>
 
                <div>
-                   <h2 className={"title"}>Projects</h2>
+                   <h2 className={"title"}>PROJECTS</h2>
                    <div id={"project_flex"}>
                        <Project title={"Banking Application using Builder Pattern"} image={banking} date="Fall 2019"
                                 description={"The banking application aims to create bank accounts for customers and also manage their credit card and debit card transactions.\n" +
@@ -85,10 +88,15 @@ export default class Resume extends React.Component {
                                 "The user can also rate, review, add to wish list and categorize the restaurants of their choice. The application was built using MEAN stack with the help of the Zomato API to retrieve the details of restaurants."}
                                 tech={"Angular, NodeJS, MongoDB, Express"} date={"Spring 2019"}/>
                        <Project title={"Android Application for Roommates"} image={roomit}
-                       description="This is an android application which can be be used for roommate co-ordination. Roommates can make a list of chores with one roommate assigned to each of them. The app also allows users to make common grocery lists and manage their expenses. Implementation of this application was done using Java with Firebase as the database to save the details entered by the users as well their login information." id={"roomit"}/>
-                       <Project title={"Chatbot for Smartwatch data"} description="This is a web based chatbot which is capable of having textual conversations with users by using pattern matching. The chatbot answers the users' queries regarding data collected from their smartwatch sensors such as HeartBeat sensor, LightSensor etc. " image={chatbot} id="chatbot" />
-                       <Project title={"Course Planner for graduate school"} image={planner}  id={"journal"}/>
-                       <Project title={"Online Diary for daily journaling"} image={diary}  id={"diary"}/>
+                       description="This is an android application which can be be used for roommate co-ordination. Roommates can make a list of chores with one roommate assigned to each of them. The app also allows users to make common grocery lists and manage their expenses. Implementation of this application was done using Java with Firebase as the database to save the details entered by the users as well their login information."
+                                tech={"Java, Firebase"} date="Fall 2018" id={"roomit"}/>
+                       <Project title={"Chatbot for Smartwatch data"} description="This is a web based chatbot which is capable of having textual conversations with users by using pattern matching. The chatbot answers the users' queries regarding data collected from their smartwatch sensors such as HeartBeat sensor, LightSensor etc. The smartwatch data is retrieved from three sources - Files, MongoDB and MySQL database. This project also includes comparison of response time of the three sources"
+                                tech={"React, Java, SpringBoot, BotUI, MongoDB, MySQL"} date="Fall 2019" image={chatbot} id="chatbot" />
+                       <Project title={"Course Planner for graduate school"}
+                                description={"This is a Python application which automates the process of creating a course schedule for grad students. The program allows the users to enter the core subjects, electives and specialization of their choice and automatically creates a schedule for each of the semesters by taking into consideration pre-requisites for courses, total credits etc. The program checks which courses are offered during particular semesters and creates the most optimal schedule such that there are no time conflicts."}
+                                tech={"Python"} date="Fall 2019" image={planner}  id={"planner"}/>
+                       <Project title={"Online Diary for daily journaling"}
+                                description="This is an online diary created with HTML, CSS and JavaScript that enables users to save entries about their day and view previous entries." tech="HTML, CSS, JavaScript, Firebase" date="Fall 2018" image={diary}  id={"diary"}/>
 
                    </div>
                </div>

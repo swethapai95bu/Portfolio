@@ -25,13 +25,23 @@ export default class Resume extends React.Component {
             debugger;
 
 
+            if(props.id=="roomit" || props.id=="planner") {
+                modalImg.style.height = "500px";
+                modalImg.style.width = "300px";
+            }
+            else
+                modalImg.style.width = "80%";
+
             modal.style.display = "block";
             modalImg.src = img.src;
             date.innerHTML= "Date: "+props.date;
             desc.innerHTML= "Description: "+props.description;
             tech.innerHTML= "Technologies: "+props.tech;
             title.innerHTML = props.title;
+            if(props.repo!=undefined)
             repo.innerHTML= "Repository: "+props.repo;
+            else
+                repo.innerHTML = "";
 
             modal.onclick = function () {
                 modal.style.display = "none";

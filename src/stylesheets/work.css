@@ -1,5 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Exo&display=swap');
+
 .main_container {
     padding: 30px;
+    font-family: "Exo";
 }
 
 .logo {
@@ -8,8 +13,10 @@
 }
 
 .title {
-    text-align: left;
+    text-align: center;
     padding: 30px;
+    /*color: #b30000;*/
+    font-weight: bold;
 }
 
 #shell_logo {
@@ -21,7 +28,7 @@
 .work_desc {
     text-align: left;
     width: 50%;
-    font-size: large;
+    font-size: medium;
     padding: 30px;
 }
 
@@ -39,12 +46,16 @@
 
 .role {
     /*float: right;*/
-    font-size: x-large;
+    font-size: large;
 }
 
 .company {
     display: flex;
     justify-content: left;
+}
+
+#shell_bang {
+    margin-bottom: 10px;
 }
 
 
