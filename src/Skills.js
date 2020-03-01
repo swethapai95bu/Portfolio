@@ -1,8 +1,14 @@
 import React from 'react';
 import Botui from 'botui-react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import reactLogo from './images/react.png';
 import angularLogo from './images/angularLogo.png';
 import javascriptLogo from './images/javascriptLogo.png';
+import linkedinLogo from "./images/linkedinLogo.png";
+import facebookLogo from "./images/facebookLogo.png";
+import instagramLogo from "./images/instagramLogo.png";
+import bot from './images/bot.png';
+import Photography from "./Photography";
 
 
 export default class Skills extends React.Component {
@@ -190,20 +196,21 @@ export default class Skills extends React.Component {
                     <p>I'm looking to leverage my technical skills to solve challenging problems.</p>
 
                     <p>Click <span id={"click"} onClick={openChatBot}>here</span> to know more about me from my chatbot.</p>
+                    <p>Of late, I've been trying my hand at photography. Checkout my <span id="pics"><Link to={"/photography"}> pictures. </Link></span></p>
+
+                    <p>Connect with me on social media <a href="https://www.linkedin.com/in/swethapai1995/"><img className="footerlogo" src={linkedinLogo}/></a>
+                        <a href={"https://www.facebook.com/swetha.pai.9"}><img className="footerlogo" src={facebookLogo}/></a>
+                        <a href={"https://www.instagram.com/swetha_pai/"}><img className="footerlogo" src={instagramLogo}/></a></p>
 
                     <a className="mailto" href="mailto:swetha95@bu.edu"><button id="contact" type="button" className="btn btn-primary btn-lg">Contact Me</button></a>
 
                     <div id={"chatbot_img"}>
 
-                    <img src={"https://www.cleanlink.com/resources/editorial/2019/robot-24906.png"}></img>
-
+                    <img src={bot} onClick={openChatBot} id={"bot"}></img>
+                        <br/>Click to get to know me<br/>
                     </div>
 
-                    {/*<div className="images">*/}
-                    {/*    <img src={reactLogo} className="skillLogo" id="react" alt="reactLogo"/><br/>*/}
-                    {/*    <img src={angularLogo} className="skillLogo" id="angular" alt="angularLogo"/><br/>*/}
-                    {/*    <img src={javascriptLogo} className="skillLogo" id="javascript" alt="javascriptLogo"/><br/>*/}
-                    {/*</div>*/}
+
 
                 </div>
 

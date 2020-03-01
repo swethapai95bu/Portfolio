@@ -66,6 +66,19 @@ button.botui-actions-buttons-button {
 }
 
 #chatbot_img {
+    color: #b30000;
+}
 
+#bot {
+    margin-top: 100px;
+}
+
+#bot:hover, #pics:hover {
+    cursor: pointer;
+}
+
+#pics {
+    color: #b30000;
+    text-decoration: none;
 }
 
