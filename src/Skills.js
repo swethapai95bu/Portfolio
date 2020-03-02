@@ -14,8 +14,6 @@ export default class Skills extends React.Component {
 
     }
 
-
-
     showMenu() {
         const self=this;
         this.botui.message.bot({
@@ -187,9 +185,6 @@ export default class Skills extends React.Component {
                     self.hobbies();
             });
         });
-
-
-
     }
 
     render() {
@@ -235,8 +230,6 @@ export default class Skills extends React.Component {
                     <img src={bot} onClick={openChatBot} id={"bot"}></img>
                         <br/>Click to get to know me<br/>
                     </div>
-
-
 
                 </div>
 
