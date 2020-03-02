@@ -1,14 +1,10 @@
 import React from 'react';
 import Botui from 'botui-react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import reactLogo from './images/react.png';
-import angularLogo from './images/angularLogo.png';
-import javascriptLogo from './images/javascriptLogo.png';
 import linkedinLogo from "./images/linkedinLogo.png";
 import facebookLogo from "./images/facebookLogo.png";
 import instagramLogo from "./images/instagramLogo.png";
 import bot from './images/bot.png';
-import Photography from "./Photography";
 
 
 export default class Skills extends React.Component {
@@ -126,7 +122,7 @@ export default class Skills extends React.Component {
         }).then(function () {
             return self.botui.message.bot({
                 delay: 3000,
-                content: "I love watching movies, reading books and listening to rock music. Of late I've also been trying my hand at photography."
+                content: "I love watching movies, reading books and listening to rock music. Of late, I've also been trying my hand at photography."
             })
         }).then(function () {
             self.showMenu();
@@ -228,11 +224,11 @@ export default class Skills extends React.Component {
                     <p>Click <span id={"click"} onClick={openChatBot}>here</span> to know more about me from my chatbot.</p>
                     <p>Of late, I've been trying my hand at photography. Checkout my <Link to={"/photography"}> <span id="pics">pictures. </span></Link></p>
 
-                    <p>Connect with me on social media <a href="https://www.linkedin.com/in/swethapai1995/"><img className="footerlogo" src={linkedinLogo}/></a>
-                        <a href={"https://www.facebook.com/swetha.pai.9"}><img className="footerlogo" src={facebookLogo}/></a>
-                        <a href={"https://www.instagram.com/swetha_pai/"}><img className="footerlogo" src={instagramLogo}/></a></p>
+                    <p>Connect with me on social media <a href="https://www.linkedin.com/in/swethapai1995/" target="_blank"><img className="footerlogo" src={linkedinLogo}/></a>
+                        <a href={"https://www.facebook.com/swetha.pai.9"} target="_blank"><img className="footerlogo" src={facebookLogo}/></a>
+                        <a href={"https://www.instagram.com/swetha_pai/"} target="_blank"><img className="footerlogo" src={instagramLogo}/></a></p>
 
-                    <a className="mailto" href="mailto:swetha95@bu.edu"><button id="contact" type="button" className="btn btn-primary btn-lg">Contact Me</button></a>
+                    <a className="mailto" href="mailto:swetha95@bu.edu" target="_blank"><button id="contact" type="button" className="btn btn-primary btn-lg">Contact Me</button></a>
 
                     <div id={"chatbot_img"}>
 
@@ -243,13 +239,6 @@ export default class Skills extends React.Component {
 
 
                 </div>
-
-                {/*<Botui id="botui" ref={ cmp => this.botui = cmp } />*/}
-                {/*<div className="images">*/}
-                {/*    <img src={reactLogo} className="skillLogo" id="react" alt="reactLogo"/><br/>*/}
-                {/*    <img src={angularLogo} className="skillLogo" id="angular" alt="angularLogo"/><br/>*/}
-                {/*    <img src={javascriptLogo} className="skillLogo" id="javascript" alt="javascriptLogo"/><br/>*/}
-                {/*</div>*/}
 
                 <div id="myModal" className="modal">
 

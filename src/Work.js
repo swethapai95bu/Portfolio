@@ -23,7 +23,7 @@ export default class Resume extends React.Component {
                <div className={"work_ex"}>
                    <div id={"voda"} className={"work_desc"}>
                        <div className={"company"}>
-                       <a href={"https://voda.ai/"}><img className="logo" src={vodalogo}></img></a>
+                       <a href={"https://voda.ai/"} target="_blank"><img className="logo" src={vodalogo}></img></a>
                        <div className={"role"}>
                            <div className={"workplace"}> <b>VODA.ai</b></div>
                            <div>Full Stack Development Intern</div>
@@ -42,9 +42,9 @@ export default class Resume extends React.Component {
 
                    <div id="shell" className={"work_desc"}>
                        <div className={"company"}>
-                       <a href={"https://www.shell.com/"}><img className="logo" id="shell_logo" src={shelllogo}></img></a>
+                       <a href={"https://www.shell.com/"} target="_blank"><img className="logo" id="shell_logo" src={shelllogo}></img></a>
                        <div className={"role"}>
-                           <div className={"workplace"}> <b>Shell</b></div>
+                           <div className={"workplace"}><b>Shell</b></div>
                            <div>Software Engineer</div>
                            <div id={"shell_bang"}>Bangalore, India (Jun '17 - Jul '18)</div>
                        </div>
@@ -61,7 +61,7 @@ export default class Resume extends React.Component {
 
                    <div id={"hexagon"} className={"work_desc"}>
                        <div className={"company"}>
-                       <a href={"https://www.hexagonglobal.in/"}><img className="logo" id="hexagon_logo" src={hexagon}></img></a>
+                       <a href={"https://www.hexagonglobal.in/"} target="_blank"><img className="logo" id="hexagon_logo" src={hexagon}></img></a>
                            <div className={"role"}><div className={"workplace"}> <b>Hexagon Global Pvt. Ltd.</b></div>
                            <div>Software Engineer Intern</div>
                            <div>Bangalore, India (Sept '16 - Nov '16)</div>
