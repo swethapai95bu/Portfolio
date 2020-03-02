@@ -254,7 +254,7 @@ export default class Skills extends React.Component {
                 <div id="myModal" className="modal">
 
                     <span id="close" className="close">&times;</span>
-                    <div id={"chatbot_title"}>Welcome to my Chatbot!</div>
+                    <div id={"chatbot_title"}><b>Welcome to my Chatbot!</b></div>
                     <div className={"desc"} id={"title_modal"}><Botui id="botui" ref={ cmp => this.botui = cmp } /></div>
                     <img className="modal-content" id="img01"></img>
 
