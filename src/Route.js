@@ -9,7 +9,7 @@ function changeColor(event) {
     debugger;
     let element = document.getElementById(event.target.id);
     console.log(event.target);
-    element.style.color = "#b30000";
+    // element.style.color = "#b30000";
     // element.style.borderBottom = "0.3px solid black";
 }
 
