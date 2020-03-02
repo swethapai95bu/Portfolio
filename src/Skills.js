@@ -17,7 +17,7 @@ export default class Skills extends React.Component {
     showMenu() {
         const self=this;
         this.botui.message.bot({
-            content: "What would you like to know?",
+            content: "What else would you like to know?",
             delay: 1000
         }).then(function() {
             self.botui.action.button({
@@ -62,22 +62,22 @@ export default class Skills extends React.Component {
             })
         }).then(function () {
             self.botui.message.bot({
-                delay: 2000,
+                delay: 2500,
                 content: "I am an expert in Java and SQL"
             })
         }).then(function () {
         self.botui.message.bot({
-            delay: 3000,
+            delay: 3500,
             content: "I am also familiar with C, C++, R and Python"
         })
     }).then(function () {
             self.botui.message.bot({
-                delay: 4000,
+                delay: 5000,
                 content: "Databases I've worked with are Oracle, MySQL and MongoDB"
             })
         }).then(function () {
             return self.botui.message.bot({
-                delay: 5000,
+                delay: 6000,
                 content: "Tools I've used are AndroidStudio, Oracle 12C, Heroku, GitHub, RStudio and Endur"
             })
         }).then(function () {
@@ -93,12 +93,12 @@ export default class Skills extends React.Component {
             loading: true,
         }).then(function () {
             self.botui.message.bot({
-                delay: 2000,
+                delay: 2500,
                 content: "I also learnt how to build Android apps in my 'Mobile Application Development' class"
             })
         }).then(function () {
             return self.botui.message.bot({
-                delay: 3000,
+                delay: 3500,
                 content: "Courses like Advanced Algorithms, Advanced Database Management, Advanced Programming Techniques and Software Design Patterns have helped me build a strong foundation in Programming"
             })
         }).then(function () {
@@ -115,7 +115,7 @@ export default class Skills extends React.Component {
         }).then(function () {
             self.botui.message.bot({
                 delay: 2000,
-                content: "Just Kidding!"
+                content: "Just kidding!"
             })
         }).then(function () {
             return self.botui.message.bot({

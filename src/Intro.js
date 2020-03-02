@@ -72,7 +72,7 @@ export default class Intro extends React.Component {
 
                             <h3>Intern at VODA.ai</h3>
 
-                            <p>Full Stack Development Intern‍</p>
+                            <p>Full Stack Developer</p>
 
                         </li>
 
