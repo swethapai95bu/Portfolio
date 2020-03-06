@@ -49,22 +49,37 @@ export default class Photography extends React.Component {
             <div className={"photo_container"}>
 
                 <div className={"photo_flex"}>
-                    <img className={"pictures"} src={nh} id="img1" onClick={handleClick} alt="Mother nature spraying color into our lives! (New Hampshire - Oct '19)"></img>
-                    <img className={"pictures"} src={logs} id="img2" onClick={handleClick} alt={"Gas Works Park (Seattle - Sept '19)"}></img>
+                    {/*<img className={"pictures"} src={nh} id="img1" onClick={handleClick} alt="Mother nature spraying color into our lives! (New Hampshire - Oct '19)"></img>*/}
+                    {/*<img className={"pictures"} src={logs} id="img2" onClick={handleClick} alt={"Gas Works Park (Seattle - Sept '19)"}></img>*/}
+
+                    {/*/!*<img className={"pictures"} src={bench}></img>*!/*/}
+                    {/*<img className={"pictures"} src={lamp} onClick={handleClick} id={"img3"} alt={"Nothing like blue skies"}></img>*/}
+                    {/*<img className={"pictures"} src={bcommon} onClick={handleClick} id={"img7"} alt={"Boston Common (Feb '20)"}></img>*/}
+
+                    {/*<img className={"pictures"} src={"https://i.imgur.com/s2VTCu1.jpg"} onClick={handleClick} id={"img5"} alt={"Boston Harbor"}></img>*/}
+                    {/*<img className={"pictures"} src={carousel} onClick={handleClick} id={"img6"} alt={"Spinning in the void"}></img>*/}
+                    {/*<img className={"pictures"} src={citylights} onClick={handleClick} id={"img4"} alt={"City Lights!"}></img>*/}
+                    {/*/!*<img className={"pictures"} src={cic}></img>*!/*/}
+                    {/*<img className={"pictures"} src={guest} onClick={handleClick} id={"img8"} alt={"Only a guest!"}></img>*/}
+
+                    {/*<img className={"pictures"} src={skies} onClick={handleClick} id={"img9"} alt={"Unusual skies"}></img>*/}
+                    {/*<img className={"pictures"} src={fountain} id="img21" onClick={handleClick} alt={"A content summer evening"}></img>*/}
+                    {/*<img className={"pictures"} src={aligned} onClick={handleClick} id={"img11"} alt={""}></img>*/}
+
+                    {/*<img className={"pictures"} src={shackles} id="img20" onClick={handleClick} alt={"Shackles of society"}></img>*/}
+                    {/*<img className={"pictures"} src={fall} onClick={handleClick} id={"img10"} alt={"Favorite place on the BU campus during the favorite time of the year"}></img>*/}
+                    <img className={"pictures"} src={"https://i.imgur.com/gMHBJ1A.jpg"} id="img1" onClick={handleClick} alt="Mother nature spraying color into our lives! (New Hampshire - Oct '19)"></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/aCPMJoG.jpg"} id="img2" onClick={handleClick} alt={"Gas Works Park (Seattle - Sept '19)"}></img>
 
                     {/*<img className={"pictures"} src={bench}></img>*/}
-                    <img className={"pictures"} src={lamp} onClick={handleClick} id={"img3"} alt={"Nothing like blue skies"}></img>
-                    <img className={"pictures"} src={bcommon} onClick={handleClick} id={"img7"} alt={"Boston Common (Feb '20)"}></img>
-
-                    {/*<blockquote className="imgur-embed-pub" lang="en" data-id="a/UxUSJUu"><a*/}
-                    {/*    href="//imgur.com/a/UxUSJUu"></a></blockquote>*/}
-                    {/*<script async src="//s.imgur.com/min/embed.js" charSet="utf-8"></script>*/}
+                    <img className={"pictures"} src={"https://i.imgur.com/0S4MBxW.jpg"} onClick={handleClick} id={"img3"} alt={"Nothing like blue skies"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/3HfEhca.jpg"} onClick={handleClick} id={"img7"} alt={"Boston Common (Feb '20)"}></img>
 
                     <img className={"pictures"} src={"https://i.imgur.com/s2VTCu1.jpg"} onClick={handleClick} id={"img5"} alt={"Boston Harbor"}></img>
-                    <img className={"pictures"} src={carousel} onClick={handleClick} id={"img6"} alt={"Spinning in the void"}></img>
-                    <img className={"pictures"} src={citylights} onClick={handleClick} id={"img4"} alt={"City Lights!"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/MPpuJKO.jpg"} onClick={handleClick} id={"img6"} alt={"Spinning in the void"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/ngJpwlV.jpg"} onClick={handleClick} id={"img4"} alt={"City Lights!"}></img>
                     {/*<img className={"pictures"} src={cic}></img>*/}
-                    <img className={"pictures"} src={guest} onClick={handleClick} id={"img8"} alt={"Only a guest!"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/BA4Kmrp.jpg"} onClick={handleClick} id={"img8"} alt={"Only a guest!"}></img>
 
                     <img className={"pictures"} src={skies} onClick={handleClick} id={"img9"} alt={"Unusual skies"}></img>
                     <img className={"pictures"} src={fountain} id="img21" onClick={handleClick} alt={"A content summer evening"}></img>
@@ -72,6 +87,7 @@ export default class Photography extends React.Component {
 
                     <img className={"pictures"} src={shackles} id="img20" onClick={handleClick} alt={"Shackles of society"}></img>
                     <img className={"pictures"} src={fall} onClick={handleClick} id={"img10"} alt={"Favorite place on the BU campus during the favorite time of the year"}></img>
+
 
 
                 </div>
