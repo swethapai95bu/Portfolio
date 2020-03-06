@@ -56,7 +56,11 @@ export default class Photography extends React.Component {
                     <img className={"pictures"} src={lamp} onClick={handleClick} id={"img3"} alt={"Nothing like blue skies"}></img>
                     <img className={"pictures"} src={bcommon} onClick={handleClick} id={"img7"} alt={"Boston Common (Feb '20)"}></img>
 
-                    <img className={"pictures"} src={flag} onClick={handleClick} id={"img5"} alt={"Boston Harbor"}></img>
+                    {/*<blockquote className="imgur-embed-pub" lang="en" data-id="a/UxUSJUu"><a*/}
+                    {/*    href="//imgur.com/a/UxUSJUu"></a></blockquote>*/}
+                    {/*<script async src="//s.imgur.com/min/embed.js" charSet="utf-8"></script>*/}
+
+                    <img className={"pictures"} src={"https://i.imgur.com/s2VTCu1.jpg"} onClick={handleClick} id={"img5"} alt={"Boston Harbor"}></img>
                     <img className={"pictures"} src={carousel} onClick={handleClick} id={"img6"} alt={"Spinning in the void"}></img>
                     <img className={"pictures"} src={citylights} onClick={handleClick} id={"img4"} alt={"City Lights!"}></img>
                     {/*<img className={"pictures"} src={cic}></img>*/}
