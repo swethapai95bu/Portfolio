@@ -20,6 +20,8 @@ export default class Intro extends React.Component {
 
     render() {
 
+        console.log("Hey there, fellow developer! This website was built using React");
+
         return(
             <div className="container1">
                 <div className={"cont_flex"}>
@@ -28,8 +30,6 @@ export default class Intro extends React.Component {
                 <h1 id="my_name">SWETHA PAI</h1>
                 <h3>Master's in Computer Science</h3>
                 <h3>Boston University</h3>
-                    {/*<a className="mailto" href="mailto:swetha95@bu.edu"><button id="contact" type="button" className="btn btn-primary btn-lg">Contact Me</button></a>*/}
-
                 <img id="photo" src={me2} alt={"This is me"}/>
                 </div>
                 <Skills/>

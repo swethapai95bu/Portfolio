@@ -81,12 +81,12 @@ export default class Photography extends React.Component {
                     {/*<img className={"pictures"} src={cic}></img>*/}
                     <img className={"pictures"} src={"https://i.imgur.com/BA4Kmrp.jpg"} onClick={handleClick} id={"img8"} alt={"Only a guest!"}></img>
 
-                    <img className={"pictures"} src={skies} onClick={handleClick} id={"img9"} alt={"Unusual skies"}></img>
-                    <img className={"pictures"} src={fountain} id="img21" onClick={handleClick} alt={"A content summer evening"}></img>
-                    <img className={"pictures"} src={aligned} onClick={handleClick} id={"img11"} alt={""}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/T8nnI56.jpg"} onClick={handleClick} id={"img9"} alt={"Unusual skies"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/v5G88lP.jpg"} id="img21" onClick={handleClick} alt={"A content summer evening"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/ECOEQdh.jpg"} onClick={handleClick} id={"img11"} alt={""}></img>
 
-                    <img className={"pictures"} src={shackles} id="img20" onClick={handleClick} alt={"Shackles of society"}></img>
-                    <img className={"pictures"} src={fall} onClick={handleClick} id={"img10"} alt={"Favorite place on the BU campus during the favorite time of the year"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/bnDAc1Q.jpg"} id="img20" onClick={handleClick} alt={"Shackles of society"}></img>
+                    <img className={"pictures"} src={"https://i.imgur.com/eWxrDna.jpg"} onClick={handleClick} id={"img10"} alt={"Favorite place on the BU campus during the favorite time of the year"}></img>
 
 
 
